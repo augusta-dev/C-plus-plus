@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1685950635 source:c:\users\hp\augusta\school\c++\pi function\main.cpp
+	<iostream>
+	<iomanip>
+

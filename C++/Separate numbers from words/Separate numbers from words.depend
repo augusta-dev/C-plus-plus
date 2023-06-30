@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685926376 source:c:\users\hp\augusta\school\c++\separate numbers from words\main.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+

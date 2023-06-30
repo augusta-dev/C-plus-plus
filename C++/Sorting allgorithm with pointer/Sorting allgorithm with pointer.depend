@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685383366 source:c:\users\hp\augusta\school\c++\sorting allgorithm with pointer\main.cpp
+	<iostream>
+	<iomanip>
+	<cstdlib>
+

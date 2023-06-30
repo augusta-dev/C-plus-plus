@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1682053747 source:c:\users\hp\augusta\school\c++\all exercises\recursive function of even sums\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+

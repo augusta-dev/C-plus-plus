@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1682422500 source:c:\users\hp\augusta\school\c++\all exercises\exam day\die roll counter\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<cstdlib>
+

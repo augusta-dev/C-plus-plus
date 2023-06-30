@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1682132150 source:c:\users\hp\augusta\school\c++\all exercises\randomly creaed results in an array\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+	<cstdlib>
+

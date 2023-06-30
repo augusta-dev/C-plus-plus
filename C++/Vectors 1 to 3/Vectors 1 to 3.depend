@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1685333774 source:c:\users\hp\augusta\school\c++\vectors 1 to 3\main.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<cstdlib>
+

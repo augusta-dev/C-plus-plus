@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1684406740 source:c:\users\hp\augusta\school\c++\week 11 linear search number finder\main.cpp
+	<iostream>
+	<cstdlib>
+	<cmath>
+	<ctime>
+

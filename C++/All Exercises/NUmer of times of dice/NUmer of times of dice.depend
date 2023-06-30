@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1682013976 source:c:\users\hp\augusta\school\c++\all exercises\numer of times of dice\main.cpp
+	<iostream>
+	<cmath>
+	<iomanip>
+	<cstdlib>
+

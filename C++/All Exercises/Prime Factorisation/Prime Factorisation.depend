@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1682020164 source:c:\users\hp\augusta\school\c++\all exercises\prime factorisation\main.cpp
+	<iostream>
+	<iomanip>
+	<cmath>
+

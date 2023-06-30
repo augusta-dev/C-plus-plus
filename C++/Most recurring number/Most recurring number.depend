@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685907394 source:c:\users\hp\augusta\school\c++\most recurring number\main.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+

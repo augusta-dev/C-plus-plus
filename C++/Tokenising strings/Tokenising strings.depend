@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1685883839 source:c:\users\hp\augusta\school\c++\tokenising strings\main.cpp
+	<iostream>
+	<cstring>
+	<iomanip>
+
