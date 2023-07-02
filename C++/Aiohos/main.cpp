@@ -40,7 +40,7 @@ int main()
     return 0;
 }
 
-void find_most_recurring(int *arr, int arraylength, int *num, int numlength)
+void find_most_recurring(int arr[], int arraylength, int *num, int numlength)
 {
     int most_recurring = 0;
     for (int i = 0; i < arraylength; i++)
@@ -50,24 +50,13 @@ void find_most_recurring(int *arr, int arraylength, int *num, int numlength)
             most_recurring = i;
         }
     }
-
-    most_recurring_digits[most_recurring]++;
-
-    for (int i = 0; i < arraylength; i++)
-    {
-        if (arr[i] == arr[most_recurring])
-        {
-            most_recurring_digits[i]++;
+    cout << "The most recurring digits are: ";
+    for (int i =0; i<arraylength; i++){
+        if(arr[i] == arr[most_recurring]){
+            cout << i << ", ";
         }
     }
-
-    cout << "The most recurring digits are: ";
-    int i = 0;
-    while (most_recurring_digits[i] != 0)
-    {
-        cout << num[i] << ", ";
-        i++;
-    }
     cout << endl;
+
 }
 
