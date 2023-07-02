@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1684920300 source:c:\users\hp\augusta\school\c++\card dealer example\main.cpp
-	<iostream>
-	<cmath>
-	<cstdlib>
-	<ctime>
-

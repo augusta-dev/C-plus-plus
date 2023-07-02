@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1685958740 source:c:\users\hp\augusta\school\c++\palindrome example\main.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cctype>
+
+1685958740 source:c:\users\hp\augusta\projects\c-plus-plus\c++\palindrome example\main.cpp
+	<iostream>
+	<iomanip>
+	<cstring>
+	<cctype>
+

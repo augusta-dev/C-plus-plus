@@ -1,70 +1,63 @@
 #include <iostream>
 #include <cstdlib>
-#include <ctime>
 #include <cmath>
+#include <ctime>
 
 using namespace std;
-
 int rand_0toN1(int n);
 void draw_a_card();
+int select_next_available(int n);
 
 char *suits[4] = {"hearts", "diamonds", "spades", "clubs"};
-char *ranks[13] = {"ace", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "jack", "queen", "king"};
-int randomNumbers[53];
-//char output[52];
+//Because they're strings.
+char *ranks[13] = {"king", "queen", "jack", "ten", "nine", "eight", "seven", "six", "five", "four", "three", "two", "ace"};
+
+int card_drawn[52];
+int card_remaining = 52;
 
 int main()
 {
     int n, i;
-
-    srand(time(NULL));
-    while (1){
-        cout << "Enter no. of cards to draw (0 to exit): ";
-        cin >> n;
-        if ( n == 0)
+    srand(time(NULL));//random numbers
+    while(1){
+        cout << "Enter no. of cards to draw (0 to exit): " << endl;
+        cin>> n;
+        if (n == 0)
             break;
-        for( i=1; i<=n; i++){
-            cout << i << "   ";
-            draw_a_card();
-
-        }
+        for(i =1; i <=n; i++)
+            draw_a_card();//Keep drawing random cards until we get the full number requested.
 
 
     }
-    system("pause");
     return 0;
 }
 
 void draw_a_card(){
+    int r;//random rank index
+    int s;//random suit index
+    int n, card;
 
-    int r;
-    int s, card;
-    card = rand_0toN1(52);
-    r = card % 13;
-    s = card / 13;
-//    char *rankC[1] = ranks[r];
-//    char *suitC[1] = suits[s];
-    cout << ranks[r] << " of " << suits[s]<< endl;
+    n = rand_0toN1(card_remaining--);
+    card = select_next_available(n);
 
-//    output[i] = {rankC, suitC}
-}
-
-int rand_0toN1(int n) {
-    int sum = n;
-
-    int randNo = rand() % n;
-    if(randomNumbers[randNo]){
-        rand_0toN1(sum);
-        // sum++;
-    }
-    else{
-        randomNumbers[randNo]++;
-        return randNo;
-    }
-
+    r = card % 13; //There can be as many as 12 ranks
+    s = card / 13; //There are only 4 suiits
+    cout << ranks[r] << " of " << suits[s] << endl;
 
 }
+int rand_0toN1(int n){
+    return rand() % n;
+}
+int select_next_available(int n){
+    int i = 0;
+    while (card_drawn[i])
+        i++;
 
-//int booleanTest(int r, int k){
-//
-//}
+    while (n-- > 0) {
+        i++;
+        while(card_drawn[i])
+            i++;
+    }
+    card_drawn[i] = true;
+    return i;
+}
